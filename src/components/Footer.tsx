@@ -33,14 +33,10 @@ function Footer() {
           <p className="footer__company">Orynix Studios</p>
           <ul className="footer__contact-list">
             <li>
-              <a href="mailto:contact@orynixstudios.com">
-                contact@orynixstudios.com
+              <a href="mailto:hello@orynixstudios.com">
+                hello@orynixstudios.com
               </a>
             </li>
-            <li>
-              <a href="tel:+10000000000">+1 (000) 000-0000</a>
-            </li>
-            <li>123 Placeholder Ave, Suite 100, City, Country</li>
           </ul>
         </div>
 
