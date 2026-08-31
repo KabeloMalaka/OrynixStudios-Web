@@ -64,10 +64,10 @@ function Footer() {
         </div>
 
         <div className="footer__legal-links">
-          <Link to="/terms" className="footer__link">
+          <Link to="/ham/terms" className="footer__link">
             Terms of Use
           </Link>
-          <Link to="/privacy" className="footer__link">
+          <Link to="/ham/privacy" className="footer__link">
             Privacy Policy
           </Link>
         </div>

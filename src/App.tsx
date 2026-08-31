@@ -12,8 +12,8 @@ function App() {
       <main style={{ flex: 1 }}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/terms" element={<TermsOfUse />} />
-          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="ham/terms" element={<TermsOfUse />} />
+          <Route path="ham/privacy" element={<PrivacyPolicy />} />
         </Routes>
       </main>
       <Footer />
