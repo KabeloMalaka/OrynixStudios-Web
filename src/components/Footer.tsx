@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import './Footer.css'
 
 const SOCIAL_LINKS = [
@@ -61,15 +60,6 @@ function Footer() {
               </svg>
             </a>
           ))}
-        </div>
-
-        <div className="footer__legal-links">
-          <Link to="/ham/terms" className="footer__link">
-            Terms of Use
-          </Link>
-          <Link to="/ham/privacy" className="footer__link">
-            Privacy Policy
-          </Link>
         </div>
       </div>
     </footer>
