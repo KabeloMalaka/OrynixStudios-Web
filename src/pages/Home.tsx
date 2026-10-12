@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './Home.css'
+import hamLogo from '../assets/ham-logo-light.svg'
 
 function Home() {
   return (
@@ -15,7 +16,7 @@ function Home() {
         <p className="home__projects-label">Our Projects</p>
         <Link to="/ham" className="home__project-card">
           <span className="home__project-icon" aria-hidden="true">
-            ⏱️
+            <img src={hamLogo} alt="Half A Minute logo" />
           </span>
           <span className="home__project-info">
             <span className="home__project-name">Half A Minute</span>

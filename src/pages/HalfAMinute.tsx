@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './HalfAMinute.css'
+import hamLogo from '../assets/ham-logo-light.svg'
 
 const FEATURES = [
   {
@@ -33,7 +34,7 @@ function HalfAMinute() {
     <div className="ham">
       <section className="ham__hero">
         <span className="ham__mark" aria-hidden="true">
-          ⏱️
+          <img src={hamLogo} alt="Half A Minute logo" />
         </span>
         <p className="ham__eyebrow">Orynix Studios</p>
         <h1 className="ham__title">Half A Minute</h1>
@@ -53,7 +54,7 @@ function HalfAMinute() {
             ▶ Get it on Google Play
           </a>
         </div>
-        <p className="ham__play-note">Coming soon!</p>
+        {/* <p className="ham__play-note">Coming soon!</p> */}
       </section>
 
       <section className="ham__section">

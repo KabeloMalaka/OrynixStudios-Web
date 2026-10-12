@@ -932,14 +932,14 @@ function TermsOfUse() {
         <p>
           <strong>Email address:</strong> admin@orynixstudios.com
         </p>
-        <p>
+        {/* <p>
           <strong>Registered address:</strong> 210 Lunnon Rd, Hillcrest,
           Pretoria, Gauteng, 0083
         </p>
         <p>
           <strong>Postal address:</strong> 210 Lunnon Rd, Hillcrest,
           Pretoria, Gauteng, 0083
-        </p>
+        </p> */}
       </section>
 
       <section className="policy__section">

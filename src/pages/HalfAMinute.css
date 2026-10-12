@@ -21,11 +21,7 @@
   width: 4.5rem;
   height: 4.5rem;
   border-radius: var(--radius-lg);
-  background: linear-gradient(
-    135deg,
-    var(--color-primary) 0%,
-    var(--color-secondary) 100%
-  );
+  background: #fff;
   color: var(--color-text-light);
   font-size: 2rem;
   box-shadow: var(--shadow-lg);

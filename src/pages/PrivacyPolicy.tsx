@@ -119,10 +119,10 @@ function PrivacyPolicy() {
         <p>
           <strong>Email address:</strong> admin@orynixstudios.com
         </p>
-        <p>
+        {/* <p>
           <strong>Postal address:</strong> 210 Lunnon Rd, Hillcrest,
           Pretoria, Gauteng, 0083
-        </p>
+        </p> */}
         <p>
           You have the right to make a complaint at any time to the South
           African regulator’s office (Information Regulator’s Office of
