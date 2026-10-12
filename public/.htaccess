@@ -4,7 +4,7 @@
   RewriteEngine On
   RewriteBase /
 
-  # Leave real files and directories alone (assets, favicon.svg, icons.svg, ...)
+  # Leave real files and directories alone (assets, images, ...)
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
@@ -13,12 +13,14 @@
   RewriteRule ^ index.html [L]
 </IfModule>
 
-# Hashed build assets are immutable; index.html must never be cached.
+# Only Vite's hashed build output in /assets/ is immutable (its filenames change with content).
+# Everything else (index.html, favicon, any un-hashed file) must revalidate, or browsers
+# keep serving stale copies for a year after the file changes or is removed.
 <IfModule mod_headers.c>
-  <FilesMatch "\.(js|css|woff2?|png|jpe?g|svg|webp|avif)$">
+  <If "%{REQUEST_URI} =~ m#^/assets/#">
     Header set Cache-Control "public, max-age=31536000, immutable"
-  </FilesMatch>
-  <FilesMatch "index\.html$">
+  </If>
+  <Else>
     Header set Cache-Control "no-cache"
-  </FilesMatch>
+  </Else>
 </IfModule>
